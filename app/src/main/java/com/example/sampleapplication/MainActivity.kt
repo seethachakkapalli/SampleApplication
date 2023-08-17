@@ -6,6 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.sampleapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    //ActivityMainBinding - generated class by databindign library
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
