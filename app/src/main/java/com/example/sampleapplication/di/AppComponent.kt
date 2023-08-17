@@ -12,8 +12,13 @@ import dagger.android.support.AndroidSupportInjectionModule
 //modules = [(AndroidInjectionModule::class)] should be added to inject in the application class
 
 // AndroidInjectionModule ===> Application class related module
-@Component(modules = [(AndroidInjectionModule::class), AndroidSupportInjectionModule::class])
-interface AppComponent: AndroidInjector<MyApplication> {
+@Component(
+    modules = [(AndroidInjectionModule::class),
+        AndroidSupportInjectionModule::class,
+        AppModule::class,
+        ActivityBindingModule::class]
+)
+interface AppComponent : AndroidInjector<MyApplication> {
 
     @Component.Builder
     interface Builder {
