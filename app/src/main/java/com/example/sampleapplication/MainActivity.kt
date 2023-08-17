@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.sampleapplication.databinding.ActivityMainBinding
 import dagger.android.support.DaggerAppCompatActivity
 import retrofit2.Retrofit
@@ -22,5 +23,10 @@ class MainActivity : DaggerAppCompatActivity() {
         setContentView(binding.root)
 
         Log.d("ehwriue", retrofit.toString());
+    }
+
+    fun initListeners() {
+        binding.btSecondActivity.setOnClickListener {
+        }
     }
 }
