@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.sampleapplication.databinding.ActivityMainBinding
 import dagger.android.support.DaggerAppCompatActivity
@@ -17,12 +19,11 @@ class MainActivity : DaggerAppCompatActivity() {
     @Inject
     lateinit var retrofit: Retrofit
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        Log.d("ehwriue", retrofit.toString());
     }
 
     fun initListeners() {

@@ -24,9 +24,11 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_container"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
