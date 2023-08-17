@@ -1,4 +1,12 @@
 package com.example.sampleapplication.repository
 
+import com.example.sampleapplication.model.Post
+import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.core.Single
+import java.util.concurrent.Flow
+
 class LocalRepo: Repository {
+    override fun getPosts(): Flowable<List<Post>> {
+        return Flowable.error(Throwable())
+    }
 }
