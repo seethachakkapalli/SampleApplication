@@ -17,5 +17,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Go to details fragment" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_second_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to second activity" />
     </LinearLayout>
 </layout>

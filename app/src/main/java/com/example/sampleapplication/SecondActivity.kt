@@ -2,6 +2,7 @@ package com.example.sampleapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.navigation.findNavController
 import com.example.sampleapplication.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
@@ -13,5 +14,13 @@ class SecondActivity : AppCompatActivity() {
 
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initListeners()
+    }
+
+    private fun initListeners() {
+        binding.postsFragment.setOnClickListener {
+            findNavController(R.id.nav_container).navigate(R.id.postsFragment)
+        }
     }
 }

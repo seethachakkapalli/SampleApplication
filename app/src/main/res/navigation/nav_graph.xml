@@ -22,5 +22,15 @@
         <action
             android:id="@+id/action_postsFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_postsFragment_to_secondActivity2"
+            app:destination="@id/secondActivity2" />
     </fragment>
+    <activity
+        android:id="@+id/secondActivity2"
+        android:name="com.example.sampleapplication.SecondActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_second">
+
+    </activity>
 </navigation>

@@ -31,5 +31,9 @@ class PostsFragment : Fragment() {
         binding.btDetails.setOnClickListener {
             findNavController().navigate(R.id.action_postsFragment_to_detailsFragment)
         }
+
+        binding.btSecondActivity.setOnClickListener {
+            findNavController().navigate(R.id.action_postsFragment_to_secondActivity2)
+        }
     }
 }
