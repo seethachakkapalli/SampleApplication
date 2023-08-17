@@ -8,5 +8,5 @@ import retrofit2.http.GET
 interface ApiService {
 
     @GET("/posts")
-    fun getPosts() : Flowable<Post>
+    fun getPosts() : Flowable<List<Post>>
 }
