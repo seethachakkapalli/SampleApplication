@@ -28,6 +28,7 @@ class MainActivity : DaggerAppCompatActivity() {
 
     fun initListeners() {
         binding.btSecondActivity.setOnClickListener {
+            findNavController(R.id.nav_container).navigate(R.id.bt_second_activity)
         }
     }
 }

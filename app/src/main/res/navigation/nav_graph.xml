@@ -9,7 +9,11 @@
         android:id="@+id/detailsFragment"
         android:name="com.example.sampleapplication.fragment.DetailsFragment"
         android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_postsFragment"
+            app:destination="@id/postsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/postsFragment"
         android:name="com.example.sampleapplication.fragment.PostsFragment"
