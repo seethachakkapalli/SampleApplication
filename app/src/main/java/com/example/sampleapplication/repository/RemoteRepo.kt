@@ -1,5 +1,6 @@
 package com.example.sampleapplication.repository
 
+import android.util.Log
 import com.example.sampleapplication.model.Post
 import com.example.sampleapplication.service.ApiService
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
@@ -18,8 +19,7 @@ class RemoteRepo @Inject constructor(val apiService: ApiService) : Repository {
             .observeOn(AndroidSchedulers.mainThread())
             .map { posts ->
                 posts.map { post ->
-                    post.fetchedOn = System.currentTimeMillis().toString()
-                    post
+                    post.copy(fetchedOn = System.currentTimeMillis().toString())
                 }
             }
     }

@@ -9,8 +9,8 @@ import dagger.Module
 @Module
 abstract class RepositoryModule {
 
-    @Binds
-    abstract fun getLocalRepo(localRepo: LocalRepo): Repository
+//    @Binds
+//    abstract fun getLocalRepo(localRepo: LocalRepo): Repository
 
     @Binds
     abstract fun getRemoteRepo(remoteRepo: RemoteRepo): Repository
